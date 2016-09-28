@@ -22,6 +22,8 @@
 		344864801D9A6F0B00BD3D6A /* BottomMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3448647F1D9A6F0B00BD3D6A /* BottomMenuView.m */; };
 		344864831D9A740D00BD3D6A /* tabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 344864821D9A740D00BD3D6A /* tabBarView.m */; };
 		344864861D9A78F900BD3D6A /* IconButtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 344864851D9A78F900BD3D6A /* IconButtom.m */; };
+		34ECBEA91D9BA3DC00C0E123 /* MoodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ECBEA81D9BA3DC00C0E123 /* MoodVC.m */; };
+		34ECBEAC1D9BBF0000C0E123 /* AllStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ECBEAB1D9BBF0000C0E123 /* AllStatusViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,10 @@
 		344864821D9A740D00BD3D6A /* tabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabBarView.m; sourceTree = "<group>"; };
 		344864841D9A78F900BD3D6A /* IconButtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconButtom.h; sourceTree = "<group>"; };
 		344864851D9A78F900BD3D6A /* IconButtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconButtom.m; sourceTree = "<group>"; };
+		34ECBEA71D9BA3DC00C0E123 /* MoodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodVC.h; sourceTree = "<group>"; };
+		34ECBEA81D9BA3DC00C0E123 /* MoodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodVC.m; sourceTree = "<group>"; };
+		34ECBEAA1D9BBF0000C0E123 /* AllStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllStatusViewController.h; sourceTree = "<group>"; };
+		34ECBEAB1D9BBF0000C0E123 /* AllStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllStatusViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,10 @@
 			children = (
 				3448646C1D9A635000BD3D6A /* MainVC.h */,
 				3448646D1D9A635000BD3D6A /* MainVC.m */,
+				34ECBEA71D9BA3DC00C0E123 /* MoodVC.h */,
+				34ECBEA81D9BA3DC00C0E123 /* MoodVC.m */,
+				34ECBEAA1D9BBF0000C0E123 /* AllStatusViewController.h */,
+				34ECBEAB1D9BBF0000C0E123 /* AllStatusViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -269,6 +279,8 @@
 				3448644D1D9A1EDD00BD3D6A /* AppDelegate.m in Sources */,
 				344864661D9A485F00BD3D6A /* LoginVC.m in Sources */,
 				344864711D9A636400BD3D6A /* DockView.m in Sources */,
+				34ECBEA91D9BA3DC00C0E123 /* MoodVC.m in Sources */,
+				34ECBEAC1D9BBF0000C0E123 /* AllStatusViewController.m in Sources */,
 				3448646E1D9A635000BD3D6A /* MainVC.m in Sources */,
 				344864801D9A6F0B00BD3D6A /* BottomMenuView.m in Sources */,
 				3448644A1D9A1EDD00BD3D6A /* main.m in Sources */,
@@ -434,6 +446,7 @@
 				344864611D9A1EDD00BD3D6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -12,9 +12,7 @@
 #import "IconButtom.h"
 
 @interface DockView ()
-    @property (nonatomic, strong) BottomMenuView *bottomMenu;
-    @property (nonatomic, strong) tabBarView *tabBar;
-    @property (nonatomic, strong) IconButtom *iconButtom;
+    
 @end
 @implementation DockView
 -(instancetype)initWithFrame:(CGRect)frame{
@@ -30,22 +28,19 @@
 }
 #pragma mark - 初始化bottomMenu
 -(void)setupBottomView{
-    self.bottomMenu = [[BottomMenuView alloc]init];
-    self.bottomMenu.backgroundColor = [UIColor purpleColor];
+    _bottomMenu = [[BottomMenuView alloc]init];
     [self addSubview:self.bottomMenu];
     self.bottomMenu.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
 }
 #pragma mark - 添加tabBar
 -(void)setupTabBarView{
-    self.tabBar = [[tabBarView alloc]init];
-    self.tabBar.backgroundColor = [UIColor orangeColor];
+    _tabBar = [[tabBarView alloc]init];
     [self addSubview:self.tabBar];
     self.tabBar.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
 }
 #pragma mark - 添加IconButton
 -(void)setupIconButton{
-    self.iconButtom = [[IconButtom alloc]init];
-    self.iconButtom.backgroundColor = [UIColor blueColor];
+     _iconButtom = [[IconButtom alloc]init];
     [self addSubview:self.iconButtom];
 
 }

@@ -12,17 +12,24 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         //创建子控件
-        [self setupSubItemWithImage:@"tabbar_mood"];
-         [self setupSubItemWithImage:@"tabbar_photo"];
-         [self setupSubItemWithImage:@"tabbar_blog"];
+        [self setupSubItemWithImage:@"tabbar_mood" type:kbottomItemMood];
+         [self setupSubItemWithImage:@"tabbar_photo" type:kbottomItemPhoto];
+         [self setupSubItemWithImage:@"tabbar_blog" type:kbottomItemBlog];
     }
     return self;
 }
--(void)setupSubItemWithImage:(NSString *)imageStr{
+-(void)setupSubItemWithImage:(NSString *)imageStr type:(ItemType)type{
     UIButton *btn = [[UIButton alloc]init];
     [btn setImage:[UIImage imageNamed:imageStr] forState:UIControlStateNormal];
     [btn setBackgroundImage:[UIImage imageNamed:@"tabbar_separate_selected_bg"] forState:UIControlStateHighlighted];
+    btn.tag = type;
+    [btn addTarget:self action:@selector(itemClick:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:btn];
+}
+-(void)itemClick:(UIButton *)sender{
+    if ([self.delegate respondsToSelector:@selector(bottomItemClick: type:)]) {
+        [self.delegate bottomItemClick:self type:(int)sender.tag];
+    }
 }
 -(void)rotateIfLandscape:(BOOL)islandscape{
     //1.item的个数

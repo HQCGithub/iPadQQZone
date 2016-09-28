@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BottomMenuView,tabBarView,IconButtom;
 
 @interface DockView : UIView
+    @property (nonatomic, strong, readonly) BottomMenuView *bottomMenu;
+    @property (nonatomic, strong, readonly) tabBarView *tabBar;
+    @property (nonatomic, strong, readonly) IconButtom *iconButtom;
+
 -(void)rotateIfLandscape:(BOOL)islandscape;
 @end
